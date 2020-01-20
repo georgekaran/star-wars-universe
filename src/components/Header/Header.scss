@@ -1,0 +1,12 @@
+.Header__Menu {
+    display: inline-flex;
+    background-color: #171717;
+    padding: 20px 0;
+    height: 50px;
+    width: 100%;
+    justify-content: space-around;
+    & > .Item {
+        flex-basis: 100%;
+        display: flex;
+    }
+}

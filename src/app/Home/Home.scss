@@ -1,0 +1,11 @@
+.Home__Base {
+    display: flex;
+    & .Home__Section {
+        flex-basis: 100%;
+    }
+    & .Home__Image {
+        width: 100%;
+        height: auto;
+    }
+}
+
