@@ -2,6 +2,19 @@
     display: flex;
     & .Home__Section {
         flex-basis: 100%;
+        padding: 10px;
+        & .Text {
+            font-weight: 400;
+            display: block;
+        }
+        & .Title {
+            font-family: 'Star Jedi';
+            font-size: 4vw;
+        }
+        & .Subtitle {
+            font-family: 'Death Star';
+            font-size: 20px;
+        }
     }
     & .Home__Image {
         width: 100%;
