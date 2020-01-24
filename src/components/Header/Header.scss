@@ -1,12 +1,22 @@
 .Header__Menu {
     display: inline-flex;
-    background-color: #171717;
-    padding: 20px 0;
+    background-color: #00000091;
+    padding: 10px 0;
     height: 50px;
     width: 100%;
     justify-content: space-around;
+    position: fixed;
+    top: 0;
     & > .Item {
         flex-basis: 100%;
         display: flex;
+        margin: auto;
+        justify-content: center;
+        & .Label {
+            font-family: "DIN Next W01 Regular";
+            color: white;
+            font-size: 1em;
+            font-weight: 600;
+        }
     }
 }

@@ -7,12 +7,12 @@ const HeaderItem = ({ title = "",
                       children, 
                       ...props }) => {
   return (
-    <div className="Item">
+    <div className="Item" {...props}>
       <NavLink title={title} 
                to={to} 
                {...props}>
         {title && 
-          <label>{title}</label>}
+          <label className="Label">{title}</label>}
         {children}
       </NavLink>
     </div>

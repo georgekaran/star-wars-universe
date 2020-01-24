@@ -14,34 +14,32 @@ export default function Router() {
   return (
     <ReactRouter>
       <Header>
-        <HeaderItem to="/"
-                    style={{ display: 'flex' }} >
-           <Logo />
+        <HeaderItem to="/" style={{ display: "flex", margin: "0 auto" }}>
+          <Logo />
         </HeaderItem>
-        <HeaderItem title="Filmes" 
-                    to="/movies" />
-        <HeaderItem title="Planetas" 
-                    to="/planets" />
-        <HeaderItem title="Personagens" 
-                    to="/characters" />
+        <HeaderItem title="Filmes" to="/movies" />
+        <HeaderItem title="Planetas" to="/planets" />
+        <HeaderItem title="Personagens" to="/characters" />
       </Header>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/characters">
-          <Characters />
-        </Route>
-        <Route path="/planets">
-          <Planets />
-        </Route>
-        <Route path="/movies">
-          <Movies />
-        </Route>
-        <Route>
-          <NotFound />
-        </Route>
-      </Switch>
+      <div style={{ marginTop: 100}}>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/characters">
+            <Characters />
+          </Route>
+          <Route path="/planets">
+            <Planets />
+          </Route>
+          <Route path="/movies">
+            <Movies />
+          </Route>
+          <Route>
+            <NotFound />
+          </Route>
+        </Switch>
+      </div>
     </ReactRouter>
   );
 }

@@ -1,17 +1,3 @@
-@font-face {
-  font-family: 'Star Jedi';
-  font-weight: 400;
-  src: url('./assets/fonts/STJEDISE.TTF') format('truetype');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Death Star';
-  font-weight: 400;
-  src: url('./assets/fonts/DeathStar.ttf') format('truetype');
-  font-style: normal;
-}
-
 body {
   margin: 0;
   font-family: -apple-system, 'Roboto', 'Oxygen',

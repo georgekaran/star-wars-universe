@@ -1,8 +1,6 @@
 import React from "react";
 import './Logo.scss';
 
-import { images } from "utils/variables";
-
-const Logo = () => <img className="Logo" src={images.logo} alt="Logo"></img>;
+const Logo = () => <img className="Logo" src={require(`assets/images/logo2.png`)} alt="Logo"></img>;
 
 export default Logo;
