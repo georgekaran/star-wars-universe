@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
+import './HeaderItem.scss';
 
 const HeaderItem = ({ title = "", 
                       to = "/",
@@ -8,10 +9,11 @@ const HeaderItem = ({ title = "",
                       ...props }) => {
   return (
     <div className="Item" {...props}>
-      <NavLink title={title} 
+      <NavLink className="HeaderLink"
+               title={title} 
                to={to} 
                {...props}>
-        {title && 
+        {title &&
           <label className="Label">{title}</label>}
         {children}
       </NavLink>

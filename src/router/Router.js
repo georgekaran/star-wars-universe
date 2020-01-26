@@ -21,7 +21,7 @@ export default function Router() {
         <HeaderItem title="Planetas" to="/planets" />
         <HeaderItem title="Personagens" to="/characters" />
       </Header>
-      <div style={{ marginTop: 100}}>
+      <div style={{ marginTop: 70 }}>
         <Switch>
           <Route exact path="/">
             <Home />

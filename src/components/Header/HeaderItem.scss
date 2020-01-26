@@ -1,0 +1,25 @@
+.HeaderLink {
+  text-decoration: none;
+  &.active {
+    &:after {
+        content: '';
+        height: 1.5px;
+        width: 100%;
+        background-color: #f2d629;
+        display: block;
+    }
+  }
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer !important;
+    & .Label {
+      color: #fff;
+    }
+  }
+  & .Label {
+    font-family: "DIN Next W01 Regular";
+    color: #e2e2e2;
+    font-size: 1em;
+    font-weight: 600;
+  }
+}

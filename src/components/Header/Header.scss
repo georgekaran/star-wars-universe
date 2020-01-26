@@ -12,11 +12,6 @@
         display: flex;
         margin: auto;
         justify-content: center;
-        & .Label {
-            font-family: "DIN Next W01 Regular";
-            color: white;
-            font-size: 1em;
-            font-weight: 600;
-        }
+        position: relative;
     }
 }

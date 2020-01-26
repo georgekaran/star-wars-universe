@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import "./NotFound.scss";
 
-import { images } from "utils/variables";
+import NotFoundImage from 'assets/images/not-found.jpg'
 import GradientButton from "components/Button/GradientButton";
 
 const NotFound = () => {
@@ -14,7 +14,7 @@ const NotFound = () => {
   
   return (
     <div className="NotFound">
-      <img src={images.notFound} 
+      <img src={NotFoundImage} 
            alt="Imagem página não encontrada"></img>
       <label>404 - Página não encontrada.</label>
       <GradientButton label={"Voltar a força!"}
