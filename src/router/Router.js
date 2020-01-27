@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as ReactRouter, Switch, Route } from "react-router-dom";
 
-import Movies from "app/Movies/Movies.js";
+import MoviesList from "app/Movies/MoviesList.js";
+import Movie from "app/Movies/Movie.js";
 import Planets from "app/Planets/Planets.js";
 import Characters from "app/Characters/Characters.js";
 import Home from "app/Home/Home";
@@ -14,7 +15,7 @@ export default function Router() {
   return (
     <ReactRouter>
       <Header>
-        <HeaderItem to="/" style={{ display: "flex", margin: "0 auto" }}>
+        <HeaderItem id="logo" to="/" style={{ display: "flex", margin: "0 auto" }}>
           <Logo />
         </HeaderItem>
         <HeaderItem title="Filmes" to="/movies" />
@@ -32,8 +33,11 @@ export default function Router() {
           <Route path="/planets">
             <Planets />
           </Route>
-          <Route path="/movies">
-            <Movies />
+          <Route exact path="/movies">
+            <MoviesList />
+          </Route>
+          <Route path="/movies/:id">
+            <Movie />
           </Route>
           <Route>
             <NotFound />

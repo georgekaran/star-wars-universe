@@ -1,5 +1,10 @@
 .Home__Base {
     display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%) translateX(-50%);
+    left: 50%;
+    width: 80%;
     & .Home__Section {
         flex-basis: 100%;
         padding: 10px;
@@ -15,7 +20,10 @@
         }
         & .Subtitle {
             font-family: 'Death Star';
-            font-size: 20px;
+            color: #fadd2a;
+            text-shadow: 3px 3px 3px rgb(0, 0, 0);
+            text-align: center;
+            font-size: x-large;
         }
     }
     & .Home__Image {

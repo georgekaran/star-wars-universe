@@ -1,5 +1,7 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "./Card.scss";
+
 import Title from "components/Typography/Title";
 import { brazilFormat } from "utils/date/dateFormats";
 import CardButton from "components/Button/CardButton";
@@ -11,14 +13,16 @@ export default function Card({
   director,
   ...props
 }) {
-  console.log(props);
+  let history = useHistory();
 
   const loadImage = () => {
     return require(`assets/images/movies/${episode_id}.jpg`);
   };
 
   const handleOnClick = e => {
-    console.log("Clicou");
+    history.push(`/movies/${episode_id}`, {
+      movie: { episode_id, title, release_date, director, ...props }
+    });
   };
 
   return (

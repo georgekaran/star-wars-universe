@@ -1,5 +1,5 @@
 import Axios from './BaseAxios';
 
 export const moviesApi = {
-    getMovies: () => Axios.get("films/")
+    getMovies: (id) => Axios.get(`films/${id ? id : ''}`)
 }

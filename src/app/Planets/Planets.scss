@@ -1,0 +1,12 @@
+.Characters__Container {
+    overflow: auto;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    width: 100%;
+    background-color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+  }
+  

@@ -11,6 +11,11 @@
   -moz-border-radius: 10px;
   box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
   background: #1d1a1a;
+  overflow: hidden;
+  &:hover {
+    transform: scale(1.01);
+  }
+
   & .Image {
     height: 100%;
     width: 150px;

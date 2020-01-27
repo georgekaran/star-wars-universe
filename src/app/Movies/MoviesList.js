@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import "./MoviesList.scss";
+
 import { moviesApi } from "utils/Api/Api";
 import Card from "components/Card/MovieCard/Card";
-import "./Movies.scss";
+import Loading from 'components/Loading/Loading'
 
-const Movies = () => {
+const MoviesList = () => {
   const [movies, setMovies] = useState(null);
 
   async function fetchMovies() {
@@ -24,13 +26,15 @@ const Movies = () => {
   return (
     <div className="Movies__Wrapper">
       <div className="Movies__Inner__Wrapper">
-        {movies &&
+        {movies ?
           movies.map(movie => {
             return <Card key={movie.episode_id} {...movie} />;
-          })}
+          }) : 
+            <Loading />
+          }
       </div>
     </div>
   );
 };
 
-export default Movies;
+export default MoviesList;
